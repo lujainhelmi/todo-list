@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for the trash icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h2>Todo App</h2>
+        
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="text" id="todoInput" placeholder="What needs doing?">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <!-- Controls / Filters Section -->
+        <div class="controls-section">
+            <span class="tip">Tip: double-click a todo to edit. Press Enter to save.</span>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+        </div>
+
+        <!-- Dynamic List -->
+        <ul id="todoList"></ul>
+
+        <!-- Footer Actions -->
+        <div class="footer-section">
+            <span id="itemsLeft">2 items left</span>
+            <div class="footer-actions">
+                <button id="clearCompletedBtn">Clear completed</button>
+                <button id="clearAllBtn">Clear all</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
